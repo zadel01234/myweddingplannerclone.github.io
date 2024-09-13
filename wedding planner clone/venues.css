@@ -1,0 +1,678 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.poppins-regular,* {
+    font-family: "Poppins", sans-serif;
+    /* font-weight: 400; */
+    font-style: normal;
+}
+/* header */
+.index-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    font-family: 'Poppins';
+    font-weight: 100;
+    font-size: 1rem;
+    position: absolute;
+}
+.index-header-right > ul > li > a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.index-header-right > ul > li > a:hover{
+    text-decoration: none;
+    color: #ff4362;
+}
+.index-header-right > ul > li > a.active{
+    color: #ff4362;
+}
+.index-header-right > ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.index-header-right > ul >li{
+    margin-right: 30px;
+}
+.index-header-right > ul > li .icon{
+    display: none;
+    color: #ff6780;
+}
+
+/* hero image */
+.hero-image::before{
+    width: 100%;
+    height: 70vh;
+    background-image: url(assets/wedding-venue-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.hero-image{
+    background-color: #04206056;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+.hero-image-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin-bottom: 200px; */
+}
+.hero-image-div img{
+    margin-bottom: 30px;
+}
+.hero-image h1{
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: 'Libre Baskerville',serif;
+    font-size: 10rem;
+    font-weight:500;
+}
+.hero-image p{
+    /* margin-bottom: 100px; */
+    font-size: 2.5rem;
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: 'Libre Baskerville',serif;
+}
+.hero-image span{
+    font-size: 1.5rem;
+    /* margin-bottom: -5px; */
+    font-family: 'Libre Baskerville',serif;
+}
+
+/* venue-section */
+.venue-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(128, 128, 128, 0.129);
+    margin-top: 30px;
+    flex-direction: column;
+    gap: 70px;
+}
+.venue-section-container{
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 5fr 5fr ;
+    grid-template-rows: 5fr 5fr ;
+    gap: 30px;
+    margin-top: 100px;
+}
+.venue-section-main-1{
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.venue-section-main-2{
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.venue-section-main-3{
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.venue-section-main-4{
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.venue-section-mmain-image{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+.venue-section-mmain-image img{
+    width: 100%;
+}
+.venue-section-main-text{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.venue-section-main-text span{
+    color: #252d41;
+    font-size: 1.5rem;
+    font-family: 'Libre Baskerville',serif;
+}
+.venue-section-main-text h1{
+    color: #252d41;
+    font-size: 2.2rem;
+    font-family: 'Libre Baskerville',serif;
+    font-weight: 100;
+    margin: 20px 0px;
+}
+.venue-section-main-text hr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    border: 1px solid #ff6780;
+    color: #ff6780;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    height: 1px;
+}
+.venue-section-main-text p{
+    color: #252d41;
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+.bold b{
+    font-size: 1rem;
+    font-family: 'Libre Baskerville',serif;
+}
+.bold span{
+    font-size: 1rem;
+    font-family: 'Libre Baskerville',serif;
+    font-weight: 100;
+}
+.venue-section-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.venue-button{
+    width: 100%;
+    text-decoration: none;
+    color: #252d41;
+    border: 2px solid #ff4362;
+    padding: 15px 45px;
+}
+.venue-button:hover{
+    width: 100%;
+    text-decoration: none;
+    color: #ffffff;
+    border: 2px solid #ff4362;
+    background-color: #ff4362;
+    transition: 0.2s ease-in;
+}
+
+/* above-footer */
+.above-footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.above-footer-left{
+    background-color: #ff4362;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+.icons-2{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: row;
+    position: relative;
+    margin-top: 20px;
+}
+.expe-2{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    position: relative;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.expe-2 > i{
+    z-index: 2;
+    position: relative;
+    color: #ff6780;
+    /* top: 10px; */
+    /* left: 6px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.above-footer-left h3{
+    font-size: 1rem;
+    font-weight: 100;
+    font-family: 'Libre Baskerville',serif;
+    padding-top: 30px;
+}
+.above-footer-left h1{
+    font-size: 3rem;
+    font-family: 'Libre Baskerville',serif;
+    font-weight: 500;
+    padding: 30px 0px;
+}
+.above-footer-left p{
+    font-weight: 10;
+    width: 70%;
+    text-align: center;
+    line-height: 1.8;
+}
+.above-footer-right{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form-container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-container h1{
+    font-size: 3.5rem;
+    text-align: center;
+    width: 80%;
+    font-family: 'Libre Baskerville',serif;
+    line-height: 1.6;
+    font-weight: 100;
+    color: #252d41;
+    padding-bottom: 20px;
+}
+.form-container p{
+    color: #3a4664;
+    width: 80%;
+    font-size: 1.1rem;
+    font-family: 'Libre Baskerville',serif;
+    font-weight: 100;
+    text-align: center;
+    padding-bottom: 20px;
+    line-height: 1.8;
+}
+.above-footer-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.above-footer-form input{
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(128, 128, 128, 0.047);
+    border: 1px solid rgba(128, 128, 128, 0.452);
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+.above-footer-form input:placeholder-shown{
+    padding-left: 10px;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+.above-footer-form textarea{
+    width: 100%;
+    height: 120px;
+    background-color: rgba(128, 128, 128, 0.047);
+    border: 1px solid rgba(128, 128, 128, 0.452);
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+.above-footer-form textarea:placeholder-shown{
+    padding-left: 10px;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+.above-footer-button{
+    text-decoration: none;
+    color: #252d41;
+    margin-top: 30px;
+    border: 2px solid #ff6780;
+    padding: 15px 30px;
+}
+.above-footer-button:hover{
+    background-color: #ff4362;
+    color: #ffffff;
+    border: 2px solid #ff4362;
+    transition: 0.2s ease-in;
+}
+
+/* index-footer */
+.inside{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #252d41; 
+}
+.index-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
+    justify-content: center;
+    width: 80%;
+    /* height: 100px; */
+    padding: 60px 0px;
+    background-color: #252d41; 
+}
+.index-footer-left{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 80%;
+    color: #ffffff;
+}
+.index-footer-right{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 80%;
+    color: #ffffff;
+}
+
+/* responsive */
+/* responsive tablet */
+@media(max-width:768px){
+    /* header */
+    .index-header-right > ul >li{
+        margin-right: 10px;
+    }
+    
+
+    /* venue-section */
+
+
+    .venue-section-main-text h1{
+        font-size: 2rem;
+    }
+
+    .venue-section-main-text p{
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+        width: 95%;
+        text-align: center;
+    }
+    .bold b{
+        font-size: 0.7rem;
+        font-family: 'Libre Baskerville',serif;
+    }
+    .bold span{
+        font-size: 0.7rem;
+        font-family: 'Libre Baskerville',serif;
+        font-weight: 100;
+    }
+    
+    /* above-footer */
+    .above-footer{
+        flex-direction: column;
+    }
+    .above-footer-left{
+        height: 70vh;
+    }
+
+    /* index footer */
+    .index-footer-left span{
+        font-size: 0.8rem;
+    }
+    .index-footer-right span{
+        font-size: 0.8rem;
+        font-weight: 100;
+    }
+}
+
+/* responsive 425px mobile */
+@media screen and (max-width: 425px){
+    /* header */
+    .index-header-right > ul >li{
+        margin-right: 0px;
+    }
+    .index-header-right.responsive {
+        position: relative;
+    }
+    .index-header-right.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ff4362;
+      left: 20px;
+    }
+    .index-header-right.responsive ul li a {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      font-size: 0.9rem;
+    }
+    .index-header-right.responsive ul{
+      float: left;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin-top: 30px;
+      padding-left: 100px;
+      margin-right: 0px;
+    }
+    .index-header-right > ul > li > a{
+        display: none;
+        
+    }
+    .index-header-right > ul > li .icon{
+        display: flex;
+    }
+
+    /* hero image */
+    .hero-image::before{
+        height: 50vh;
+        background-size: cover;
+        background-attachment: scroll;
+    }
+    .hero-image{
+        height: 50vh;
+    }
+    .hero-image h1{
+        font-size: 4rem;
+    }
+    .hero-image p{
+        font-size: 2.3rem;
+        width: 70%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .hero-image span{
+        font-size: 1.5rem;
+    }
+
+    /* venue-section */
+
+    .venue-section-container{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .venue-section-main-text p{
+        color: #252d41;
+        font-size: 1rem;
+        text-align: center;
+        letter-spacing: 1px;
+        line-height: 1.8;
+        margin-bottom: 30px;
+    }
+    .bold b{
+        font-size: 1rem;
+        font-family: 'Libre Baskerville',serif;
+    }
+    .bold span{
+        font-size: 1rem;
+        font-family: 'Libre Baskerville',serif;
+        font-weight: 100;
+    }
+   
+    /* above-footer */
+    .above-footer{
+        flex-direction: column;
+    }
+    .above-footer-left{
+        height: 50vh;
+    }
+    .above-footer-left h1{
+        padding: 20px 0px;
+    }
+    .above-footer-left p{
+        font-weight: 100;
+        width: 98%;
+        font-size: 1em;
+    }
+    .above-footer-right{
+        height: 75vh;
+    }
+    .form-container{
+        width: 90%;
+    }
+    .form-container h1{
+        font-size: 2.8rem;
+        width: 100%;
+        line-height: 1.2;
+        padding-bottom: 15px;
+    }
+    .form-container p{
+        width: 100%;
+    }
+    .above-footer-form input{
+        height: 2.5rem;
+    }
+    /* index-footer */
+    .inside{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .index-footer{
+        flex-direction: column;
+        width: 90%;
+        padding: 40px 0px;
+    }
+    .index-footer-left{
+        justify-content: center;
+    }
+    .index-footer-right{
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width:375px){
+     /* header */
+    .index-header-right.responsive ul{
+      padding-left: 10px;
+    }
+
+    /* hero image */
+    .hero-image::before{
+        height: 40vh;
+    }
+    .hero-image{
+        height: 40vh;
+    }
+    .hero-image h1{
+        font-size: 3.7rem;
+    }
+    .hero-image p{
+        font-size: 2rem;
+    }
+    .venue-section-main-text p{
+        color: #252d41;
+        font-size: 0.8rem;
+    }
+
+
+
+    
+    /* above-footer */
+    .form-container h1{
+        font-size: 2.5rem;
+    }
+    .above-footer-form input{
+        height: 2rem;
+    }
+}
+
+@media screen and (max-width:320px){
+    .form-container h1{
+        font-size: 2rem;
+    }
+    .venue-section-main-text p{
+        color: #252d41;
+        font-size: 0.7rem;
+    }
+    .bold b{
+        font-size: 0.8rem;
+        font-family: 'Libre Baskerville',serif;
+    }
+    .bold span{
+        font-size: 0.8rem;
+        font-family: 'Libre Baskerville',serif;
+        font-weight: 100;
+    }
+}
